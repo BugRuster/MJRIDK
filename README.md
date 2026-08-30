@@ -4,8 +4,14 @@ Code accompanying the paper *"Indian Sign Language Recognition with Landmark Fea
 
 We study isolated Indian Sign Language (ISL) word recognition on a school-collected dataset of 67 signs and 1,072 videos. Hand and upper-body landmarks extracted with MediaPipe are converted into spatial and temporal features and classified with three models: XGBoost, a CNN–LSTM, and a compact Transformer. The paper's central finding is an accuracy–efficiency tradeoff: the Transformer reaches 73.2% accuracy, while XGBoost reaches 71.0% at roughly 8x lower training cost and 4x faster inference.
 
-- **Paper:** [link once posted on arXiv]
+- **Paper:** [Zenodo (Version 1.0)](https://doi.org/10.5281/zenodo.21956082) — [Record](https://zenodo.org/records/21956082)
 - **Dataset:** https://www.kaggle.com/datasets/bugruster/isl-buggy-arn089
+
+## 📄 Published Paper
+
+> **Sharma, A. (2026).** *Indian Sign Language Recognition with Landmark Features: Accuracy–Efficiency Tradeoffs Across Classical and Deep Models* (Version 1.0). Zenodo. [https://doi.org/10.5281/zenodo.21956082](https://doi.org/10.5281/zenodo.21956082)
+
+The full paper (LaTeX source and PDF) is available in the [`ResearchPaper/`](ResearchPaper/) directory.
 
 ## Repository contents
 
@@ -19,6 +25,7 @@ We study isolated Indian Sign Language (ISL) word recognition on a school-collec
 | `code2.ipynb` | Model training: XGBoost, CNN–LSTM, and Transformer classifiers (Table II, Table III) |
 | `testcode.ipynb` | Evaluation and metrics: accuracy/precision/recall/F1 on the test split, 5-fold cross-validation for XGBoost (Table V) |
 | `test.ipynb` | Ablation studies on engineered features (Table VI) |
+| `ResearchPaper/` | Published paper (LaTeX source, PDF, architecture diagrams) |
 
 ## Setup
 
@@ -54,15 +61,16 @@ This is a pilot-scale dataset: four signers from a single institution cannot rep
 If you use this code or dataset, please cite:
 
 ```bibtex
-@article{sharma2026isl,
+@misc{sharma2026isl,
   title={Indian Sign Language Recognition with Landmark Features: Accuracy--Efficiency Tradeoffs Across Classical and Deep Models},
   author={Sharma, Anurag},
   year={2026},
-  institution={JK Lakshmipat University}
+  publisher={Zenodo},
+  version={1.0},
+  doi={10.5281/zenodo.21956082},
+  url={https://zenodo.org/records/21956082}
 }
 ```
-
-(Update with full venue/DOI details once published.)
 
 ## Acknowledgments
 
